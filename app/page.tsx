@@ -82,7 +82,7 @@ export default function Home() {
       <footer className="relative z-10 py-10 flex items-center justify-center border-t border-white/5">
         <p
           className="font-sans text-[10px] tracking-[0.3em] uppercase"
-          style={{ color: 'rgba(240,237,232,0.2)' }}
+          style={{ color: 'var(--t1)' }}
         >
           Chanul Dandeniya &nbsp;·&nbsp; {new Date().getFullYear()}
         </p>
