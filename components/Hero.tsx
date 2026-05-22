@@ -128,10 +128,11 @@ export default function Hero() {
         <h1 style={{
           fontFamily: 'var(--font-playfair)',
           fontSize: 'clamp(4.5rem, 14vw, 13rem)',
-          fontWeight: 400,
+          fontWeight: 300,
+          fontStyle: 'italic',
           lineHeight: 0.92,
           color: 'var(--t3)',
-          letterSpacing: '-0.01em',
+          letterSpacing: '0.01em',
         }}>
           <SplitChars text="Dandeniya" />
         </h1>

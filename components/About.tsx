@@ -97,8 +97,9 @@ export default function About() {
                   fontFamily: 'var(--font-playfair)',
                   fontSize: 'clamp(2rem, 4.5vw, 3.5rem)',
                   fontStyle: 'italic',
-                  fontWeight: 400,
+                  fontWeight: 300,
                   lineHeight: 1.18,
+                  letterSpacing: '0.005em',
                   color: 'var(--t1)',
                 }}>
                   Simple on the surface.
@@ -108,10 +109,11 @@ export default function About() {
                 <h2 style={{
                   fontFamily: 'var(--font-playfair)',
                   fontSize: 'clamp(2rem, 4.5vw, 3.5rem)',
-                  fontStyle: 'italic',
-                  fontWeight: 400,
+                  fontStyle: 'normal',
+                  fontWeight: 700,
                   lineHeight: 1.18,
-                  color: 'var(--t3)',
+                  letterSpacing: '-0.02em',
+                  color: 'var(--t1)',
                 }}>
                   Deep in the build.
                 </h2>

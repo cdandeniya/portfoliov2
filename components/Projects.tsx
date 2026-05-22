@@ -110,6 +110,8 @@ export default function Projects() {
               color: 'var(--t1)',
               lineHeight: 1.05,
               fontStyle: 'italic',
+              fontWeight: 300,
+              letterSpacing: '0.005em',
             }}>
               What I&apos;ve built.
             </h2>

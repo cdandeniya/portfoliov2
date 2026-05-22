@@ -87,10 +87,10 @@ export default function Contact() {
             <h2 style={{
               fontFamily: 'var(--font-playfair)',
               fontSize: 'clamp(3.5rem, 11vw, 10rem)',
-              fontWeight: 400,
+              fontWeight: 300,
               lineHeight: 0.95,
               color: 'var(--t3)',
-              letterSpacing: '-0.02em',
+              letterSpacing: '0.01em',
               fontStyle: 'italic',
             }}>
               touch.
