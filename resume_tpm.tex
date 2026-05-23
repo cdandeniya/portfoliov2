@@ -1,0 +1,178 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-20pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge \scshape Chanul Dandeniya} \\ \vspace{1pt}
+  \small 347-626-6214 $|$
+  \href{mailto:cdandeniya2@gmail.com}{cdandeniya2@gmail.com} $|$
+  \href{https://www.linkedin.com/in/cdandeniya/}{\underline{LinkedIn}} $|$
+  \href{https://cdandeniya.vercel.app}{\underline{cdandeniya.vercel.app}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Stony Brook University}{}{BS Computer Science and Applied Mathematics/Statistics \textbf{(GPA: 3.8/4.0)}}{Expected May 2027}
+  \vspace{5pt}
+  \resumeItemListStart
+    \resumeItem{\textbf{Awards:} Dean's Merit Fund for Engineering, Dr. Peter Baigent Memorial Scholarship, Presidential Scholar}
+    \resumeItem{\textbf{Activities:} Delta Sigma Pi (Professional Business Fraternity) \textbar\ Startup Exchange (SBU)}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{2pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {{\textbf{OuterLabs Studio}} $|$ {\normalfont\textit{Lead Technical Product Manager}}}
+  {Brooklyn, NY $|$ Aug 2023 -- Aug 2025}
+  {}{}
+\resumeItemListStart
+  \resumeItem{Drove end-to-end delivery for 5+ client projects (\$5K--\$25K scope), owning requirements, roadmaps, and stakeholder communication from kickoff through launch.}
+  \resumeItem{Reduced client rework by 20\% by introducing structured user stories, acceptance criteria, and definition-of-done frameworks across engineering and design handoffs.}
+  \resumeItem{Managed delivery pipeline in \textbf{Jira} (Kanban), triaging incoming requests, maintaining prioritized backlogs, and unblocking engineers to improve sprint predictability.}
+\resumeItemListEnd
+
+\resumeSubheading
+  {{\textbf{Amazon}} $|$ {\normalfont\textit{Software Engineering Apprentice}}}
+  {Manhattan, NY $|$ Oct 2021 -- Oct 2024}
+  {}{}
+\resumeItemListStart
+  \resumeItem{Coordinated release validation for 10+ major billing service deployments: authored smoke test checklists, managed go/no-go criteria, and led post-deployment verification with on-call engineers across 3 teams.}
+  \resumeItem{Partnered with engineering leads to scope and plan a multi-quarter microservices migration for billing infrastructure, tracking milestones in sprint reviews and managing risk across a 12-engineer team.}
+  \resumeItem{Drove \textbf{CI/CD} improvements in \textbf{Amazon CodePipeline}, coordinating \textbf{Blue/Green} deployment rollouts and reducing deployment-related incidents by 15\%.}
+\resumeItemListEnd
+
+\resumeSubheading
+  {{\textbf{Kroll}} $|$ {\normalfont\textit{Technology Intern, Release Engineering}}}
+  {Remote $|$ Jun 2026 -- Aug 2026}
+  {}{}
+\resumeItemListStart
+  \resumeItem{Coordinated release validation for 20+ production deployments across 4 engineering teams, managing go/no-go criteria, stakeholder sign-offs, and post-deployment verification checklists.}
+  \resumeItem{Standardized release runbook templates and escalation procedures, reducing ambiguity in incident response and cutting average time to resolution by 25\% for deployment-related issues.}
+\resumeItemListEnd
+
+\resumeSubheading
+  {{\textbf{Saiera}} $|$ {\normalfont\textit{Software Development Intern}}}
+  {Remote $|$ Jun 2025 -- Aug 2025}
+  {}{}
+\resumeItemListStart
+  \resumeItem{Defined requirements and acceptance criteria for a multimodal study chatbot (GPT-4o), aligning weekly stakeholder reviews with development progress to hit launch milestones.}
+  \resumeItem{Shipped document ingestion pipeline (S3, MongoDB) from spec to production, owning QA sign-off and monitoring post-launch performance metrics.}
+\resumeItemListEnd
+
+\resumeSubheading
+  {{\textbf{Research Lab}} $|$ {\normalfont\textit{Lead Undergraduate Researcher}}}
+  {Stony Brook, NY $|$ Jan 2025 -- May 2025}
+  {}{}
+\resumeItemListStart
+  \resumeItem{Led a 4-person engineering team delivering a real-time activity recognition pipeline; ran weekly design reviews, owned sprint planning in \textbf{Jira}, and managed milestones to on-time delivery.}
+\resumeItemListEnd
+
+\resumeSubheading
+  {{\textbf{TechCodes}} $|$ {\normalfont\textit{Founder \& Executive Director}}}
+  {Brooklyn, NY $|$ 2020 -- 2023}
+  {}{}
+\resumeItemListStart
+  \resumeItem{Founded and scaled a youth coding nonprofit to 1,500+ students globally; coordinated 15 team members, managed \$15K+ in sponsorships, and iterated programs based on attendee feedback to drive 35\% engagement growth.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {\textbf{Robotic Implant Center} $|$ \emph{Digital Strategy, UX, Frontend Delivery} $|$ \href{https://roboticimplantsnyc.com/}{\underline{Website}}}{}
+\resumeItemListStart
+  \resumeItem{Owned discovery and requirements with the client, translating goals into a sitemap, content plan, and execution checklist for design and development.}
+  \resumeItem{Coordinated timeline and reviews across design, dev, and QA; launched with analytics and heatmaps and improved consultation CTA conversion by 15\% in the first 60 days.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{SOROS Connect} $|$ \emph{Product Design, Design System, Prototyping} $|$ \href{https://www.shopsoros.com/}{\underline{Website}}}{}
+\resumeItemListStart
+  \resumeItem{Created a reusable design system with component requirements, states, and acceptance criteria; shipped 60+ components with accessibility and theming guidelines.}
+  \resumeItem{Worked with stakeholders to unblock checkout and crypto-payment UX, delivering prototypes and handoff specs that reduced UI rework during implementation.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Product \& Program Management}{: Roadmaps, PRDs, User Stories, Acceptance Criteria, Sprint Planning, Backlog Prioritization, Stakeholder Management, Risk Management} \\
+    \textbf{Delivery Tools}{: Jira, Kanban/Agile, Cross-Functional Collaboration, Release Coordination, Confluence} \\
+    \textbf{Technical}{: Python, Java, SQL; AWS, CI/CD, REST APIs, System Architecture} \\
+    \textbf{Analytics}{: KPI Definition, Metrics Tracking, A/B Testing Concepts, Basic Data Analysis}
+  }}
+\end{itemize}
+
+\end{document}

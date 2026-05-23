@@ -37,7 +37,7 @@ const experiences = [
     company: 'Kroll',
     role: 'Software Engineering Intern · Release Engineering',
     period: '2026',
-    location: 'Remote',
+    location: 'New York, NY',
     accent: '#38bdf8',
     inProgress: true,
     bullets: [],
@@ -61,7 +61,7 @@ const experiences = [
     location: 'Stony Brook, NY',
     accent: '#fb7185',
     bullets: [
-      'Built a real-time activity recognition pipeline with TensorFlow Lite and OpenCV, optimized for Raspberry Pi 4 (35% latency reduction). Led a 4-person team.',
+      'Led research fine-tuning DeepSeek-R1 for blockchain and crypto applications using LoRA and Unsloth, and built the backend inference pipeline to serve the model via REST API.',
     ],
   },
 ]
