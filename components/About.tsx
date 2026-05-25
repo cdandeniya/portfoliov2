@@ -130,7 +130,7 @@ export default function About() {
               {[
                 ['University', 'Stony Brook University'],
                 ['Major', 'CS & Applied Math / Statistics'],
-                ['GPA', '3.8 / 4.0'],
+                ['GPA', '3.7 / 4.0'],
                 ['Graduation', 'May 2027'],
               ].map(([k, v], idx, arr) => (
                 <div key={k} style={{

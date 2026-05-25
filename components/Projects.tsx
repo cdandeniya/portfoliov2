@@ -16,7 +16,7 @@ const projects = [
       'Real-time transaction fraud detection. Transactions stream through a Kafka ingestion layer into a scoring service that pulls behavioral features from Redis and flags anomalies. Sub-50ms latency, horizontally scalable via consumer group partitioning.',
     tags: ['Java', 'Kafka', 'Redis', 'PostgreSQL', 'Docker'],
     accent: '#4d9fff',
-    github: null,
+    github: 'https://github.com/cdandeniya/fraud-detection',
   },
   {
     index: '02',
@@ -27,7 +27,8 @@ const projects = [
       'Decentralized BitTorrent-style file-sharing in Rust. DHT-based peer discovery, multi-source parallel chunk downloads, integrity verification. Validated in local swarms of 5–30 peers.',
     tags: ['Rust', 'TypeScript', 'Svelte', 'P2P', 'DHT'],
     accent: '#a78bfa',
-    github: 'https://github.com/cdandeniya',
+    demo: 'https://chiral-network.vercel.app/',
+    github: 'https://github.com/chiral-network/chiral-network/commits?author=cdandeniya',
   },
   {
     index: '03',
@@ -38,7 +39,8 @@ const projects = [
       'Full-stack stock trading platform with role-based access, SQL injection prevention, and a Spring Boot REST API. 200+ simulated daily trades across 30+ seeded users.',
     tags: ['Java', 'Spring Boot', 'MySQL', 'JSP'],
     accent: '#34d399',
-    github: 'https://github.com/cdandeniya',
+    demo: 'https://novatrade.vercel.app',
+    github: 'https://github.com/cdandeniya/stock-trader',
   },
 ]
 
@@ -235,7 +237,7 @@ function ProjectRow({ p }: { p: typeof projects[0] }) {
             {p.description}
           </p>
 
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginBottom: p.github ? '1.25rem' : 0 }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginBottom: p.github || p.demo ? '1.25rem' : 0 }}>
             {p.tags.map(tag => (
               <span key={tag} style={{
                 fontFamily: 'var(--font-inter)', fontSize: '9px',
@@ -251,35 +253,70 @@ function ProjectRow({ p }: { p: typeof projects[0] }) {
             ))}
           </div>
 
-          {p.github && (
-            <a
-              href={p.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={e => e.stopPropagation()}
-              style={{
-                fontFamily: 'var(--font-inter)', fontSize: '10px',
-                letterSpacing: '0.22em', textTransform: 'uppercase',
-                color: 'var(--t3)',
-                textDecoration: 'none',
-                display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
-                transition: 'color 0.2s',
-                borderBottom: '1px solid var(--divider)',
-                paddingBottom: '0.2rem',
-              }}
-              onMouseEnter={e => {
-                const el = e.currentTarget as HTMLAnchorElement
-                el.style.color = 'var(--t1)'
-                el.style.borderBottomColor = 'var(--t3)'
-              }}
-              onMouseLeave={e => {
-                const el = e.currentTarget as HTMLAnchorElement
-                el.style.color = 'var(--t3)'
-                el.style.borderBottomColor = 'var(--divider)'
-              }}
-            >
-              GitHub &nbsp;↗
-            </a>
+          {(p.demo || p.github) && (
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.25rem', alignItems: 'center' }}>
+              {p.demo && (
+                <a
+                  href={p.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={e => e.stopPropagation()}
+                  style={{
+                    fontFamily: 'var(--font-inter)', fontSize: '10px',
+                    letterSpacing: '0.22em', textTransform: 'uppercase',
+                    color: 'var(--t3)',
+                    textDecoration: 'none',
+                    display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
+                    transition: 'color 0.2s',
+                    borderBottom: '1px solid var(--divider)',
+                    paddingBottom: '0.2rem',
+                  }}
+                  onMouseEnter={e => {
+                    const el = e.currentTarget as HTMLAnchorElement
+                    el.style.color = 'var(--t1)'
+                    el.style.borderBottomColor = 'var(--t3)'
+                  }}
+                  onMouseLeave={e => {
+                    const el = e.currentTarget as HTMLAnchorElement
+                    el.style.color = 'var(--t3)'
+                    el.style.borderBottomColor = 'var(--divider)'
+                  }}
+                >
+                  Live Demo &nbsp;↗
+                </a>
+              )}
+
+              {p.github && (
+                <a
+                  href={p.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={e => e.stopPropagation()}
+                  style={{
+                    fontFamily: 'var(--font-inter)', fontSize: '10px',
+                    letterSpacing: '0.22em', textTransform: 'uppercase',
+                    color: 'var(--t3)',
+                    textDecoration: 'none',
+                    display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
+                    transition: 'color 0.2s',
+                    borderBottom: '1px solid var(--divider)',
+                    paddingBottom: '0.2rem',
+                  }}
+                  onMouseEnter={e => {
+                    const el = e.currentTarget as HTMLAnchorElement
+                    el.style.color = 'var(--t1)'
+                    el.style.borderBottomColor = 'var(--t3)'
+                  }}
+                  onMouseLeave={e => {
+                    const el = e.currentTarget as HTMLAnchorElement
+                    el.style.color = 'var(--t3)'
+                    el.style.borderBottomColor = 'var(--divider)'
+                  }}
+                >
+                  GitHub &nbsp;↗
+                </a>
+              )}
+            </div>
           )}
           {!p.github && p.status === 'building' && (
             <span style={{
